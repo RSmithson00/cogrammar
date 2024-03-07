@@ -1,13 +1,12 @@
-#The user inputs integers using the number variable. A running sum is stored in the sum_of_guesses variable, and then divided by the guess counter when the user inputs -1.
-#-1 is not included in the mean calculation.
-#The programme uses an else condition and a repetition of the initial request for user input. I feel this is inelegant, but I am unsure of a better fix for this problem.
-#By using multiple if conditions, I feel this under-utilises the while loop but I am unsure how to fix this currently.
-#I have tried to find a way to case check in case of non-numeric inputs to number, but given we have not yet covered try and except, I am unsure how to handle this without breaking everything.
+# The user inputs integers using the number variable. 
+# A running sum is stored in the sum_of_guesses variable, and then divided by the guess counter when the user inputs -1.
+# -1 is not included in the mean calculation.
 
 number = 0
 sum_of_guesses = 0
 guess_counter = 0
-print("This piece of code will allow you to input a series of integers. When you input -1, the code will calculate the mean of your inputted integers (not including the -1). Let's begin!")
+print("This piece of code will allow you to input a series of integers. 
+\n When you input -1, the code will calculate the mean of your inputted integers (not including the -1). Let's begin!")
 
 while number != -1:
     number = int(input("Please enter a number:"))
